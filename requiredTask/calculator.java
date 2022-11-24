@@ -28,8 +28,8 @@ public class calculator {
         String sign = "";
         while (true) {
             System.out.print("Введите знак математического действия: ");
-            Scanner iScanner = new Scanner(System.in);
-            sign = iScanner.nextLine();
+            Scanner input = new Scanner(System.in);
+            sign = input.nextLine();
             // iScanner.close();
             // if ((sign == "*") || (sign == "/") || (sign == "+") || (sign == "-")) {
             // if (sign == "*") {
