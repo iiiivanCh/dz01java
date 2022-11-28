@@ -10,22 +10,22 @@ public class task001 {
 
     public static int numberUser() {
         while (true) {
-            try{
+            try {
                 System.out.print("Введите натуральное число: ");
                 Scanner iScanner = new Scanner(System.in);
                 int num = iScanner.nextInt();
                 iScanner.close();
                 return num;
-                }
-                catch(Exception ex){                    
-                    System.out.println("Ошибка ввода.");
-                }
+            } catch (Exception ex) {
+                System.out.println("Ошибка ввода.");
             }
         }
-        
+    }
+
     public static double factorialFun(int number) {
         double result = 1;
-        for (int i = 1; i <= number; i++) result *= i;
+        for (int i = 1; i <= number; i++)
+            result *= i;
         return result;
     }
 

@@ -6,24 +6,24 @@ public class task002 {
     }
 
     public static int[] getArray() {
-        int[] ar = new int [10];
-        for(int i = 0; i < ar.length; i++) {
+        int[] ar = new int[10];
+        for (int i = 0; i < ar.length; i++) {
             ar[i] = (int) (Math.random() * 2);
             System.out.print(ar[i] + " ");
         }
         return ar;
     }
 
-    public static void getNumber(int[]array) {
+    public static void getNumber(int[] array) {
         int result = 0;
         int count = 0;
-        for(int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == 1) {
                 count++;
                 if (count > result) {
                     result = count;
                 }
-            }  else {
+            } else {
                 count = 0;
             }
         }
