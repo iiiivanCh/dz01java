@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class calculator {
     public static void main(String[] args) {
+        System.out.print("Для выхода наберите - s");
         char signUser = 'b';
         Scanner input = new Scanner(System.in);
         while (signUser != 's') {
